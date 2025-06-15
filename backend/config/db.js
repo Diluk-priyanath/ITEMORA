@@ -8,6 +8,4 @@ const { PGHOST, PGDATABASE, PGUSER, PGPASSWORD } = process.env;
 export const sql = neon(
   `postgresql://${PGUSER}:${PGPASSWORD}@${PGHOST}/${PGDATABASE}?sslmode=require`
 );
-// this sql function we export is used as a tagged template literal, which allows us to write SQL queries safely
-
-// postgresql://neondb_owner:npg_pVs2PEhdfU7R@ep-summer-scene-a8s2xe9n-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+// this sql function  is used as a tagged template literal, which allows us to write SQL queries safely
